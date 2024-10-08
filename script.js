@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
         element.addEventListener('click', handleSubmenuToggle);
     });
 
-    // Close submenus when clicking outside
     document.addEventListener('click', function(e) {
         if (!menu.contains(e.target) && !menuToggle.contains(e.target)) {
             menu.classList.remove('active');
